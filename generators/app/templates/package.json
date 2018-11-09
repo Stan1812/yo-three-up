@@ -1,0 +1,29 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "dist/js/main.js",
+  "scripts": {
+  },
+  "author": {
+    "name": "<%= author %>",
+    "email": "<%= email %>",
+    "url": "libx.top"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-html": "4.0.1",
+    "jsonfile": "^4.0.0",
+    "minimist": "^1.2.0",
+    "orchestrator": "^0.3.8",
+    "uglifyjs-webpack-plugin": "1.2.7"
+  },
+  "license": "MIT"
+}
