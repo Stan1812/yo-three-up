@@ -1,12 +1,12 @@
 {
   "name": "generator-rollup-three",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rollup threejs",
-  "homepage": "",
+  "homepage": "https://github.com/Stan1812/yo-three-up/blob/master/README.md",
   "author": {
     "name": "stan1812",
     "email": "2314980309@qq.com",
-    "url": "libx.top"
+    "url": "http://libx.top"
   },
   "files": [
     "generators"
