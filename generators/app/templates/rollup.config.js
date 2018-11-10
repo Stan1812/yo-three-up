@@ -1,26 +1,26 @@
 import babel from 'rollup-plugin-babel';
-import eslint from 'rollup-plugin-eslint';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-// import replace from 'rollup-plugin-replace';
-// import uglify from 'rollup-plugin-uglify';
-
 export default {
   input: 'src/index.js',
   output: {
-    file: 'bundle.js',
-    format: 'cjs',
+    file: 'dist/index.js',
+    format: 'iife',
+    name: 'myBundle',
   },
+  // external: [ 'three-js' ], // <-- suppresses the warning
   plugins: [
     resolve({
       jsnext: true,
-      main: true,
-      browser: true,
+      main: true
     }),
-    commonjs(),
-    eslint({
-      exclude: ['src/styles/**'],
+    commonjs({
+      include: 'node_modules/**',
+      exclude: [ 'node_modules/foo/**', 'node_modules/bar/**' ],
+      extensions: [ '.js', '.coffee' ],
+      ignore: [ 'conditional-runtime-dependency' ]
     }),
+    resolve(),
     babel({
       exclude: 'node_modules/**',
     }),

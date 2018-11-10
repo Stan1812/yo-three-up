@@ -14,20 +14,22 @@
     "url": "libx.top"
   },
   "devDependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-latest": "^6.24.1",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-json": "^3.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-xo": "^0.24.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "rollup": "^0.61.2",
+    "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "eslint": "^4.11.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-html": "4.0.1",
-    "jsonfile": "^4.0.0",
-    "minimist": "^1.2.0",
-    "orchestrator": "^0.3.8",
-    "uglifyjs-webpack-plugin": "1.2.7"
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "rollup-plugin-commonjs": "^9.2.0",
+    "three-js": "^79.0.0"
   },
   "license": "MIT"
 }

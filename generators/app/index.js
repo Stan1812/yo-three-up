@@ -72,6 +72,8 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+    this.fs.copy(this.templatePath('dist'), this.destinationPath('dist'));
+
     this.fs.copy(this.templatePath('index.html'), this.destinationPath('index.html'), {
       title: this.appname
     });
